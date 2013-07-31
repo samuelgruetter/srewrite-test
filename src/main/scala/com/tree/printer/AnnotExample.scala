@@ -13,4 +13,16 @@ class AnnotExample {
 
   @transient
   def testTransient = ()
+
+  @deprecated("firstArg", "secondArg")
+  def overTest = "df"
+}
+
+@scala.annotation.implicitNotFound(msg = "The method requires an implicit org.squeryl.KeyedEntityDef in scope")
+trait KeyedEntityDef[-A,K] extends OptionalKeyedEntityDef[A,K]{
+  def getId(a: A): K
+}
+
+trait OptionalKeyedEntityDef[-A,K] {
+  def keyedEntityDef: Option[KeyedEntityDef[A,K]]
 }
