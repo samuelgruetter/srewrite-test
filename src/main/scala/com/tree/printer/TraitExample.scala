@@ -19,3 +19,12 @@ trait C extends TestClass2
 
 trait D extends B with A
 
+trait ETest[A, -B, +C] {
+  def testMethod[E] = "dd"
+}
+
+trait ETest2[A, -B, +C] extends ETest[A,B,C] {
+  def newTestMethod[E] = "ll"
+  override def testMethod[E] = "rr"
+}
+
