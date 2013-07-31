@@ -1,10 +1,10 @@
 package com.tree.printer {
   class AP extends scala.AnyRef;
   class BP (val x: Int) extends scala.AnyRef;
-  class CP (val v: Int, private[this] val f: Double) extends scala.AnyRef;
-  class DP (override val y: Int, private[this] val f: Double) (private[this] val x: Int) (private[this] val t: Double) extends BBB;
-  class EP (private[this] val x: Int) (private[this] val z: Int) (implicit private[this] val q: String, var u: Int) extends DP(x, 5.0)(z)(7.0) with AAA;
-  class FP (implicit private[this] val x: Int, private[this] val z: Double) extends scala.AnyRef {
+  class CP (val v: Int, f: Double) extends scala.AnyRef;
+  class DP (override val y: Int, f: Double) (x: Int) (t: Double) extends BBB;
+  class EP (x: Int) (z: Int) (implicit q: String, var u: Int) extends DP(x, 5.0)(z)(7.0) with AAA;
+  class FP (implicit x: Int, z: Double) extends scala.AnyRef {
     def test(implicit v: Double, q: Int) = "ff"
     def this(x: Int) = this()(1, 2.0)
   };
