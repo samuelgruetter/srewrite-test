@@ -8,11 +8,6 @@ package com.tree.printer
  * To change this template use File | Settings | File Templates.
  */
 
-//to test issues:
-//after Parser:
-//in XML literal: in XML content, please use '}}' to express '}'
-//I encountered a '}' where I didn't expect one, maybe this tag isn't closed <init>
-
 class ClassExample(message: String, some: Object) {
   def getCause: Int = 0
 }
@@ -23,4 +18,9 @@ class ChildClassExample(message: String, some: Object) extends ClassExample(mess
 
 object ObjectExample {
   def testDef(message: String) = message
+}
+
+private case class PrivateCaseExample(val a_ :Int) {
+  val b_ :String = "ddd"
+  def c_ :Int = 5
 }
