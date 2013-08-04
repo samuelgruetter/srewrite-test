@@ -1,4 +1,4 @@
-//package com.tree.printer
+package com.tree.printer
 
 /**
  * Created with IntelliJ IDEA.
@@ -46,3 +46,16 @@ class ABC(val x: Double) {
     {val (strVal3, strVal4) = ("STRVAL3", "STRVAL4");"Hello"}
   }
 }
+
+class DEF {
+  val a = List(1,2,3)
+  a match {
+    case d: List[_] => true
+    case _ => false
+  }
+  a match {
+    case d @ List(x, y) => true
+    case _:Object => true
+    case _ => false  
+  }
+ }
