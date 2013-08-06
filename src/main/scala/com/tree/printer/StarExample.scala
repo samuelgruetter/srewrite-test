@@ -6,5 +6,7 @@ class StarExample {
 
   {
     implicit val d = 9
+    def a(f: String)(implicit z: Int) = ""
+    a("dd")
   }
 }
