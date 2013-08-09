@@ -1,4 +1,4 @@
-package lazy.issue
+package com.lazyval.issue
 
 class TestLazy {
   val a = ""
