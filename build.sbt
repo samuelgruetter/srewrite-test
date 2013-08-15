@@ -6,9 +6,9 @@ scalaVersion := "2.10.2"
 
 //scalacOptions += "-Xplugin:/home/vova/scala-projects/GSoC/compilerPlugins/printPlugin/target/scala-2.10/printplugin_2.10-1.0.jar"
 
-addCompilerPlugin("test.org" %% "printplugin" % "1.0")
+//addCompilerPlugin("test.org" %% "printplugin" % "1.0")
 
-scalacOptions += "-P:printplugin:dir-name:printAST"
+//scalacOptions += "-P:printplugin:dir-name:printAST"
 
 //scalacOptions += "-verbose"
 
