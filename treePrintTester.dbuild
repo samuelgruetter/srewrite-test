@@ -8,7 +8,8 @@ build.projects:[
     system:"sbt",
     uri:"git://github.com/VladimirNik/treePrintTester.git#master"
     extra: {
-      commands: "set addCompilerPlugin(\"test.org\" %% \"printplugin\" % \"1.0\")"
+      commands: ["set addCompilerPlugin(\"test.org\" %% \"printplugin\" % \"1.0\")",
+                "set scalacOptions += \"-P:printplugin:oversrc\""]
     }
   }
 ]
