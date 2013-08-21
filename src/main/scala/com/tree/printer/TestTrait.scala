@@ -1,0 +1,3 @@
+trait VVV {
+   def vv = ""
+}
