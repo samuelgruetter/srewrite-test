@@ -1,3 +1,3 @@
 class A {
-   def someClass = ""
+   def someClass = "A"
 }
