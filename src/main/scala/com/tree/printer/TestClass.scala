@@ -1,3 +1,3 @@
 class TestClass {
-  def someDef = ""
+  def someDef = "a"
 }
