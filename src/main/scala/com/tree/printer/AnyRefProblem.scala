@@ -1,6 +1,6 @@
 package any.ref.problem
 
-class Test1
+class Test1 {}
 
 class Test2 extends scala.AnyRef
 
