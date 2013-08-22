@@ -25,4 +25,5 @@ trait KeyedEntityDef[-A,K] extends OptionalKeyedEntityDef[A,K]{
 
 trait OptionalKeyedEntityDef[-A,K] {
   def keyedEntityDef: Option[KeyedEntityDef[A,K]]
+  def someTest4 = "fff"
 }
