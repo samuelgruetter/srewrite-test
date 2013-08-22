@@ -1,3 +1,3 @@
-class A {
-   def someClass = "B"
+class TestClass {
+  def someDef = ""
 }

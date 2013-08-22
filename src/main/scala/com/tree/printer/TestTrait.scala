@@ -1,3 +1,3 @@
-trait VVV {
-   def vv = ""
+trait TestingTrait {
+   def someTrait = ""
 }
