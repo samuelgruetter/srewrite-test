@@ -15,7 +15,7 @@ class AnnotExample {
   def testTransient = ()
 
   @deprecated("firstArg", "secondArg")
-  def overTest = "dffff"
+  def overTest = "dfffff"
 }
 
 @scala.annotation.implicitNotFound(msg = "The method requires an implicit org.squeryl.KeyedEntityDef in scope")
