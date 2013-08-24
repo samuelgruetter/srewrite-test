@@ -1,0 +1,14 @@
+{build{
+projects:[
+  {
+    name:   "squeryl",
+    system: "sbt",
+    uri:    "git://github.com/VladimirNik/Squeryl.git#master"
+    extra: {
+      projects: ["squeryl"]
+    }
+  }
+],
+options:{cross-version:standard}
+}
+}
