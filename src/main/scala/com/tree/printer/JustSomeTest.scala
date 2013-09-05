@@ -1,0 +1,3 @@
+package justtotest
+
+class SomeTest
