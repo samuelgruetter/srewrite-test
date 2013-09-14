@@ -1,15 +1,17 @@
 name := "treePrintTester"
 
-version := "0.1.0"
+version := "0.2.0"
 
 scalaVersion := "2.10.2"
 
-//scalacOptions += "-Xplugin:/home/vova/scala-projects/GSoC/compilerPlugins/printPlugin/target/scala-2.10/printplugin_2.10-1.0.jar"
+libraryDependencies ++= Seq(
+        compilerPlugin("test.org" %% "printplugin" % "1.0")
+        //compilerPlugin("org.scala-lang.plugins" %% "printplugin" % "1.0"),
+        //"org.scala-lang" %% "scala-pretty-printer" % "0.2.0"
+      )
 
-//addCompilerPlugin("test.org" %% "printplugin" % "1.0")
+//libraryDependencies += compilerPlugin("org.scala-lang" %% "printplugin" % "2.10")
 
-//scalacOptions += "-P:printplugin:dir-name:printAST"
+scalacOptions += "-P:printplugin:oversrc"
 
-//scalacOptions += "-verbose"
-
-//scalacOptions += "-print"
+//libraryDependencies += "org.scala-lang" %% "scala-pretty-printer" % "2.10"
