@@ -6,9 +6,9 @@ Test project for Scala code generation using printPlugin
 ### Build process
 
 In treePrintTester directory run:
-
-```
-sbt compile
+   
+```shell
+$ sbt compile
 ```
 
 Original sources should be replaced by generated from ASTs.
