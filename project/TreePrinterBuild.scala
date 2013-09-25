@@ -29,7 +29,7 @@ object TreePrinterBuild extends Build {
     //site.includeScaladoc() ++
     //site.jekyllSupport() ++
     Seq(
-      git.remoteRepo := "git@github.com:VladimirNik/sprinter.git"
+      git.remoteRepo := "git@github.com:VladimirNik/treePrintTester.git"
       //includeFilter in Jekyll := ("*.html" | "*.png" | "*.js" | "*.css" | "CNAME")
       // the migration guide goes to scaladoc
       //excludeFilter in Jekyll := ("actors-migration-guide.html")
