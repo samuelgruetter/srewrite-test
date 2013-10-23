@@ -19,7 +19,7 @@ object TreePrinterBuild extends Build {
       ),
       //compilerPlugin("org.scala-lang.plugins" %% "printplugin" % "0.2.0") //classifier "assembly")
       //scalacOptions += "-P:printplugin:oversrc"
-      scalacOptions += "-P:printplugin:dir-name:myAST"
+      scalacOptions += "-P:printplugin:dir-name:testAST"
       //scalacOptions += "-P:printplugin:base-dir:/home/vova"
   )) settings (websiteSettings: _*)
 
