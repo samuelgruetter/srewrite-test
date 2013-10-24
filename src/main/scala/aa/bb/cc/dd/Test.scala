@@ -1,29 +1,38 @@
 package aa.bb.cc.dd
 
-import aa._
+//import aa._
 //import aa.{bb => xxx}
+//import aa.bb.cc.dd.ee.ff.FF
 
 import aa.bb
+
+import aa.bb.cc.dd.ee.ff.FF
+
+/*
 import bb.cc
 import cc.dd
 import dd.ee.ff
 import ff.FF
-import bb._
-import G._
+*/
+
+//import bb._
+//import G._
 
 //import aa.bb.cc.dd.ee.ff.gg.ff
 
-//import collection.mutable
+
+import collection.mutable
 //import scala.collection
 //import mutable._
 
 //import aa.bb.bbobj
 
+/*
 object G{
  type GG = String
  class GGG
 }
-
+*/
 class Test{
   /*
   val a: FF = null
@@ -38,7 +47,7 @@ class Test{
   val j: bb.bbobj.type = null
   val k: bb.bbobj.nn = null
   val l: bb.bbobj.NN = null
-  */
+  
   import aa.bb.cc.dd.G._
   import G._
   import bb._
@@ -63,9 +72,16 @@ class Test{
 
   val u: NN = null
   val t: nn = null
-
-  //val a: mutable.Map[Int, Int] = null
-  //var b: collection.mutable.Map[Int, Int] = null
+  */
+  val a0: Map[FF, Int] = null
+  val a: mutable.Map[Int, Int] = null
+  var b: collection.mutable.Map[FF, bb.BB] = null
+  //val vv: aa.bb.BB = null
+  val yy: FF = null
+  val zz: aa.bb.cc.dd.ee.ff.FF = null
+  val yyy: (FF => aa.bb.BB) = null
+  val zzz: (FF, aa.bb.BB) = null
+  val zzz0 = "ff"
   //val c: Map[Int, Int] = null
   //val c: List[Any] = null
   //val d = List(1, "ee")
