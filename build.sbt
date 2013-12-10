@@ -12,5 +12,5 @@ libraryDependencies ++= Seq(
   compilerPlugin("org.scala-lang.plugins" %% "srewriteplugin" % "0.1.0")
 )
 
-// scalacOptions += "-P:srewriteplugin:dir-name:myAST"
+scalacOptions += "-P:srewriteplugin:dir-name:myAST"
 
