@@ -1,2 +1,0 @@
-sbt clean
-sbt compile
