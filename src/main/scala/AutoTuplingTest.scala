@@ -51,6 +51,30 @@ object AutoTuplingTest {
   def test5() {
     println(test4(30, 50, foo(_)))
   }
+
+  val p: (Int, Int) = (88, 99)
+  val l: List[(Int, Int)] = p :: Nil
+  def f: Traversable[(Int, String)] = ???
   
+  def f1[T1, T2](l1: List[T1], l2: List[T2]) = ???
+  
+  def v1 = f1(1 :: 2 :: Nil, 3 :: 4 :: Nil)
+  
+  object Zipping {
+    
+    import scala.runtime.ZippedTraversable2._
+    
+    def test1: Traversable[(Int, String)] = zippedTraversable2ToTraversable[Int, String]((List(1, 2), List("a", "b")).zipped)
+    
+    def test2: scala.runtime.Tuple2Zipped[Int, List[Int], String, List[String]] =
+      tuple2ToZippedOps(List(1, 2), List("a", "b")).zipped
+    
+    def test2a: scala.runtime.Tuple2Zipped[Int, List[Int], String, List[String]] =
+      tuple2ToZippedOps[List[Int], List[String]](List(1, 2), List("a", "b")).zipped
+    
+    def test3: scala.runtime.Tuple2Zipped[Int, List[Int], String, List[String]] =
+      (List(10, 20), List("AAAAA", "BBBBBB")).zipped
+
+  }
 }
 
